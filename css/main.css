@@ -10,24 +10,39 @@ rgba(255, 255, 255, 0.6);*/
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --second-accent-color: #ffffff;
+  --second-bg-color: F5F4FA;
   --primary-white-color: #2196f3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
   background-color: #ffffff;
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
   font-family: Roboto, sans-serif;
-
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 1.7;
-  letter-spacing: 3%;
+  letter-spacing: 0.03;
 }
 
-.list {
+ul {
   list-style: none;
 }
+
 /* Логотип */
 .logo {
   color: var(--accent-color);
@@ -35,7 +50,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 3%;
+  letter-spacing: 0.03;
   text-decoration: none;
 }
 
@@ -51,10 +66,10 @@ body {
 /* Навигация */
 .site-nav .link {
   color: var(--title-text-color);
-  font-size: Medium;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 2%;
+  letter-spacing: 0.02;
 }
 
 .site-nav .link:hover,
@@ -67,7 +82,6 @@ body {
 }
 
 /* Контакты в меню*/
-
 .link {
   color: var(--main-text-color);
   font-style: normal;
@@ -75,7 +89,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 2%;
+  letter-spacing: 0.02;
 }
 
 .contacts .link {
@@ -86,59 +100,94 @@ body {
   color: var(--accent-color);
 }
 
+/* Уникальный контент страницы */
 /* Герой */
+/* Кнопка */
 
 .hero {
+  text-align: center;
   background-color: #2f303a;
+  text-align: center;
 }
-
 .hero-title {
   color: var(--second-accent-color);
-  font-weight: 400;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 6%;
+  letter-spacing: 0.06;
   font-size: Black;
   text-transform: uppercase;
 }
-
-/* Main */
-.section-title {
-  color: var(--title-text-color);
+.hero-button {
+  font-family: inherit;
+  font-style: inherit;
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.8;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.06;
+  /* border-color: blue; */
+  cursor: pointer;
 }
 
-.section-description {
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+}
+
+/* Кнопки для портфолио */
+
+.button-portfolio {
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
   font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: top;
-  letter-spacing: 3%;
+  font-weight: 500;
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--second-bg-color);
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
 }
 
 /* Преимущества */
-.feature-list .title {
-  color: var(--title-text-color);
+
+.feature-list-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.03;
   text-transform: uppercase;
 }
 
-/* .feature-list .text {
+.feature-list-description {
+  color: var(--primary-text-color);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 3%;
-} */
+  letter-spacing: 0.03;
+}
 
 /* Примеры работ */
-.work-list {
-  color: var(--title-text-color);
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
 }
 
 /* Команда */
@@ -152,30 +201,16 @@ body {
   line-height: 1.2;
   text-align: Center;
   vertical-align: Top;
-  letter-spacing: 3%;
+  letter-spacing: 0.03;
 }
 
-/* Кнопка */
-.button {
-  font-family: inherit;
-  color: var(--second-accent-color);
-  background-color: var(--accent-color);
-  font-size: Roboto;
-  /* font-style: 700; */
+.section-description {
+  color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.8;
-  font-weight: 700;
-  letter-spacing: 6%;
-  text-decoration: none;
-  /* border-color: blue; */
-}
-.button .main {
+  line-height: 1.2;
   text-align: center;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
+  vertical-align: top;
+  letter-spacing: 0.03;
 }
 
 /* Футер */
@@ -193,13 +228,44 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-section-contact:hover,
+.footer-section-contact:focus {
+  color: var(--second-accent-color);
+}
+
+.address-location {
+  color: var(--second-accent-color);
+}
+
 .address {
   font-style: normal;
-  color: var(--second-accent-color);
-
+  color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.7;
-  text-align: Left;
-  vertical-align: Top;
-  letter-spacing: 3%;
+  /* text-align: Left;
+  vertical-align: Top; */
+  letter-spacing: 0.03;
+}
+
+/* Страница Портфолио */
+
+/* Услуги компании */
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.service-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06;
+}
+
+.service-description {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03;
 }
