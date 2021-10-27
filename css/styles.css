@@ -10,7 +10,7 @@ rgba(255, 255, 255, 0.6);*/
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --second-accent-color: #ffffff;
-  --second-bg-color: F5F4FA;
+  --second-bg-color: #f5f4fa;
   --primary-white-color: #2196f3;
 }
 
@@ -36,7 +36,7 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.7;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -50,7 +50,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -89,7 +89,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .contacts .link {
@@ -115,7 +115,7 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   font-size: Black;
   text-transform: uppercase;
 }
@@ -127,20 +127,21 @@ ul {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 700;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   /* border-color: blue; */
   cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--title-text-color);
+  color: var(--second-accent-color);
 }
 
 /* Кнопки для портфолио */
 
 .button-portfolio {
   background-color: var(--accent-color);
+  /* background-color: #F5F4FA */
   color: var(--second-accent-color);
   font-size: 16px;
   font-weight: 500;
@@ -154,7 +155,7 @@ ul {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   cursor: pointer;
 }
 
@@ -170,7 +171,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -179,7 +180,7 @@ ul {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 /* Примеры работ */
@@ -193,15 +194,16 @@ ul {
 /* Команда */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--second-bg-color);
 }
 
 .team-title {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.2;
-  text-align: Center;
-  vertical-align: Top;
-  letter-spacing: 0.03;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
 .section-description {
@@ -210,7 +212,7 @@ ul {
   line-height: 1.2;
   text-align: center;
   vertical-align: top;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 /* Футер */
@@ -219,8 +221,18 @@ ul {
   background-color: #2f303a;
 }
 
+.logo-footer {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
 .footer-section-logo {
-  color: #ffffff;
+  color: var(--second-accent-color);
 }
 
 .footer-section-contact {
@@ -244,7 +256,7 @@ ul {
   line-height: 1.7;
   /* text-align: Left;
   vertical-align: Top; */
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 /* Страница Портфолио */
@@ -260,12 +272,12 @@ ul {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
 }
 
 .service-description {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
